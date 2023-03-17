@@ -3,7 +3,7 @@
 Ethereum pattern wallet generator
 
 Generate a nice and cool public wallet address starting with your favorite pattern 
-eg : 0x1111111.... or 0xbabep00p....
+eg : 0x1111111.... / 0xbabe.... / 0xdeadbeef
 Can generate seed or not (10x faster without)
 
 Install 
