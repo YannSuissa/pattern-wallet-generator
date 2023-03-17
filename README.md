@@ -33,3 +33,11 @@ console.log("return value", wallet)
 wallet = wallet_gen("0x424242", without_seed, debug)
 console.log("return value", wallet)
 ```
+
+```
+Wallet {
+  provider: null,
+  address: '0x4242EA46Bb0854139418AaA39677dfA4985cbA5D',
+  publicKey: '0x8b0cc12a6dae8f5f4678540f51b66a30dc9492684dc9ca9c481bd3c0ba6f663d'
+}
+```
