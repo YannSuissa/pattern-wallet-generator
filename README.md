@@ -1,6 +1,8 @@
 # pattern-wallet-generator
 
-Ethereum pattern wallet generator
+Ethereum pattern wallet generator - generate a nice and cool public wallet address starting with your favorite pattern 
+eg : 0xbabep00p..... or 0x1111111....
+Can generate seed or not (10x faster without)
 
 Install 
 
