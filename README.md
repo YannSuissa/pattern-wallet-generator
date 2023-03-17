@@ -2,6 +2,17 @@
 
 Ethereum pattern wallet generator
 
+Install 
+
+```
+npm install pattern-wallet-generator
+```
+or 
+
+```
+yarn add pattern-wallet-generator
+```
+
 Usage : 
 
 ```js
