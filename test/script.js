@@ -6,7 +6,6 @@ const without_seed = false
 
 let wallet;
 
-// console.log(helloNpm())
 wallet = wallet_gen("0x4242", with_seed)
 console.log("return value", wallet)
 wallet = wallet_gen("0x424242", without_seed)
