@@ -34,6 +34,7 @@ wallet = wallet_gen("0x424242", without_seed, debug)
 console.log("return value", wallet)
 ```
 
+Example wallet without seed
 ```
 Wallet {
   provider: null,
