@@ -5,12 +5,15 @@ Ethereum pattern wallet generator
 Usage : 
 
 ```js
-  let wallet;
-  const with_seed = true
-  const without_seed = false
+const wallet_gen = require('pattern-wallet-generator')
 
-  wallet = gen_private("0x4242", with_seed)
-  console.log("return value", wallet)
-  wallet = gen_private("0x424242", without_seed)
-  console.log("return value", wallet)
+const with_seed = true
+const without_seed = false
+
+let wallet;
+
+wallet = wallet_gen("0x4242", with_seed)
+console.log("return value", wallet)
+wallet = wallet_gen("0x424242", without_seed)
+console.log("return value", wallet)
 ```
