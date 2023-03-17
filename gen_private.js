@@ -16,7 +16,7 @@ function print(last) {
   console.log('Speed', cpt, '-', per_sec,'/s', "total seconds", sec) 
 }
 
-function find_addr(pattern, with_seed) {
+function find_addr(pattern, with_seed, debug) {
   let id, privateKey, wallet
   let refresh = 100;
 
@@ -36,7 +36,7 @@ function find_addr(pattern, with_seed) {
       wallet.publicKey = privateKey
     }
 
-    if (!(cpt % refresh)) 
+    if (debug && !(cpt % refresh)) 
       print()
 
     if (!wallet.address.startsWith(pattern)) {
@@ -49,11 +49,12 @@ function find_addr(pattern, with_seed) {
   }
 }
 
-function gen_private(pattern, with_seed) {
+function gen_private(pattern, with_seed, debug) {
 
-  console.log('Starting challenge for', pattern, (with_seed) ? "With seed..." : "Without seed...")
+  if (debug)
+    console.log('Starting challenge for', pattern, (with_seed) ? "With seed..." : "Without seed...")
   
-  let obj = find_addr(pattern, with_seed)
+  let obj = find_addr(pattern, with_seed, debug)
   
   return obj
 }
