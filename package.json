@@ -1,11 +1,12 @@
 {
   "name": "pattern-wallet-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ethereum pattern wallet generator",
   "main": "index.js",
   "scripts": {
     "test": "node test/script.js",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "link": "npm link pattern-wallet-generator"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
   "homepage": "https://github.com/YannSuissa/pattern-wallet-generator#readme",
   "dependencies": {
     "crypto": "^1.0.1",
-    "ethers": "^6.1.0"
+    "ethereum-checksum-address": "^0.0.8",
+    "ethers": "^6.1.0",
+    "keccak": "^3.0.3",
+    "secp256k1": "^5.0.0"
   }
 }
