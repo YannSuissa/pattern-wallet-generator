@@ -28,10 +28,11 @@ const debug = true           //print performance debug
 
 let wallet;
 
-wallet = wallet_gen("0x4242", with_seed, debug)
+wallet = wallet_gen(["0x4242"], with_seed, debug)
 console.log("return value", wallet)
-wallet = wallet_gen("0x424242", without_seed, debug)
+let wallet = wallet_gen(["0x42000000","0x00420000","0x00004200","0x00000042"], without_seed, debug)
 console.log("return value", wallet)
+
 ```
 
 Example wallet without seed
